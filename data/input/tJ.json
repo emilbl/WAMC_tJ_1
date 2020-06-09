@@ -1,0 +1,83 @@
+{
+  "development": false,
+  "seed": {
+    "unique": true,
+    "value": 0
+  },
+  "lattice": {
+    "name": "2d-rectangular",
+    "size": [20, 20],
+    "parameters": [1.0, 1.0],
+    "isPeriodic": [true, true]
+  },
+  "model": {
+    "name": "tJ",
+    "uniform": true,
+    "equivalent-components": false,
+    "components": 2,
+    "is-bosonic": [true, false],
+    "beta": 22,
+    "ts": [-0.1],
+    "Js": [0.03],
+    "is-canonical": [false, true],
+    "Ns": [0, 1],
+    "maxNsDiff": [0, 40],
+    "muOptimization": [false, true],
+    "avgNsDiff": [0, 0],
+    "mus": [0, 0],
+    "etas": [1, 1],
+    "maxNumWorms": 2
+  },
+  "runOptions": {
+    "numSecWarmUp":  "1 * 1 * 60 * 60",
+    "numSecOptChem": "1 * 1 * 60 * 60",
+    "numSecPreSim":  "1 * 1 * 60 * 60",
+    "numSecSim":     "5 * 24 * 60 * 60",
+    "numData":       0
+  },
+  "samplingOptions": {
+    "largeDataSamplingPeriod": 1,
+    "quantities": {
+      "sign":          false,
+      "numParticles":  false,
+      "numWinds":      false,
+      "kinetEnergy":   false,
+      "exchaEnergy":   false,
+      "potenEnergy":   false,
+      "interEnergy":   false,
+      "totEnergy":     false,
+      "nnInterEnergy": false,
+      "numParticlesAtSite":     false,
+      "flow":                   false,
+      "instantParticleNum":     false,
+      "instantParticleNumConv": false,
+      "GreensFunction": false,
+      "fourPointCorrelator": false,
+      "densityDensityCorrelator": false
+    }
+  },
+  "computeOptions": {
+    "quantities": {
+      "numParticles":  false,
+      "numWinds":      false,
+      "kinetEnergy":   true,
+      "exchaEnergy":   true,
+      "potenEnergy":   true,
+      "interEnergy":   false,
+      "nnInterEnergy": true,
+      "osParticleProd":  false,
+      "nnParticleProd":  false,
+      "nnnParticleProd": false,
+      "C1": true,
+      "C2": true,
+      "C3": true,
+      "particleCorr": false,
+      "particleConv": false
+    },
+    "average": true
+  },
+  "saveOptions": {
+    "saveWarmUpData": false,
+    "savePresimulationData": false
+  }
+}

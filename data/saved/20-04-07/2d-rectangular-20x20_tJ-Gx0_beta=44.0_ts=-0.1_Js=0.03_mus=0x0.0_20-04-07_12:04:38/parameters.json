@@ -1,0 +1,116 @@
+{
+  "computeOptions": {
+    "average": true,
+    "quantities": {
+      "C1": false,
+      "C2": false,
+      "C3": false,
+      "exchaEnergy": true,
+      "interEnergy": false,
+      "kinetEnergy": true,
+      "nnInterEnergy": true,
+      "nnParticleProd": false,
+      "nnnParticleProd": false,
+      "numParticles": false,
+      "numWinds": true,
+      "osParticleProd": false,
+      "particleConv": false,
+      "particleCorr": false,
+      "potenEnergy": true
+    }
+  },
+  "development": false,
+  "lattice": {
+    "isPeriodic": [
+      true,
+      true
+    ],
+    "name": "2d-rectangular",
+    "parameters": [
+      1.0,
+      1.0
+    ],
+    "size": [
+      20,
+      20
+    ]
+  },
+  "model": {
+    "Js": [
+      0.03
+    ],
+    "Ns": [
+      0,
+      0
+    ],
+    "avgNsDiff": [
+      0,
+      0
+    ],
+    "beta": 44.0,
+    "components": 2,
+    "equivalent-components": false,
+    "etas": [
+      1,
+      1
+    ],
+    "is-bosonic": [
+      true,
+      false
+    ],
+    "is-canonical": [
+      false,
+      true
+    ],
+    "maxNsDiff": [
+      0,
+      0
+    ],
+    "maxNumWorms": 2,
+    "mus": [
+      0,
+      0.0
+    ],
+    "name": "tJ",
+    "ts": [
+      -0.1
+    ],
+    "uniform": true
+  },
+  "runOptions": {
+    "numData": 0,
+    "numSecOptChem": "1 * 1 * 60 * 60         * 0",
+    "numSecPreSim": "1 * 1 * 60 * 60         + 0",
+    "numSecSim": "5 * 24 * 60 * 60        + 0",
+    "numSecWarmUp": "1 * 1 * 60 * 60         * 0"
+  },
+  "samplingOptions": {
+    "largeDataSamplingPeriod": 1,
+    "quantities": {
+      "GreensFunction": false,
+      "densityDensityCorrelator": false,
+      "exchaEnergy": false,
+      "flow": false,
+      "fourPointCorrelator": false,
+      "instantParticleNum": false,
+      "instantParticleNumConv": false,
+      "interEnergy": false,
+      "kinetEnergy": false,
+      "nnInterEnergy": false,
+      "numParticles": false,
+      "numParticlesAtSite": false,
+      "numWinds": false,
+      "potenEnergy": false,
+      "sign": false,
+      "totEnergy": false
+    }
+  },
+  "saveOptions": {
+    "savePresimulationData": false,
+    "saveWarmUpData": false
+  },
+  "seed": {
+    "unique": true,
+    "value": 0
+  }
+}

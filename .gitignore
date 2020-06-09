@@ -1,0 +1,14 @@
+
+# jobs
+data/jobs
+
+# build and bin directory
+build
+bin
+
+# submodules
+libs/json
+
+# temporary python files
+*.pyc
+**/__pycache__

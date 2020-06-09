@@ -1,0 +1,105 @@
+{
+  "computeOptions": {
+    "average": false,
+    "quantities": {
+      "C1": false,
+      "C2": false,
+      "C3": false,
+      "exchaEnergy": true,
+      "interEnergy": true,
+      "kinetEnergy": true,
+      "nnInterEnergy": true,
+      "numParticles": false,
+      "particleConv": false,
+      "particleCorr": false,
+      "potenEnergy": true
+    }
+  },
+  "development": false,
+  "lattice": {
+    "isPeriodic": [
+      true,
+      true
+    ],
+    "name": "2d-rectangular",
+    "parameters": [
+      1.0,
+      1.0
+    ],
+    "size": [
+      20,
+      20
+    ]
+  },
+  "model": {
+    "Js": [
+      0.03
+    ],
+    "Ns": [
+      0,
+      1
+    ],
+    "beta": 27.5,
+    "components": 2,
+    "equivalent-components": false,
+    "etas": [
+      0.5,
+      1.5
+    ],
+    "is-bosonic": [
+      true,
+      false
+    ],
+    "is-canonical": [
+      false,
+      true
+    ],
+    "maxNsDiff": [
+      0,
+      10
+    ],
+    "mus": [
+      0,
+      -0.38
+    ],
+    "name": "tJ",
+    "ts": [
+      -0.1
+    ],
+    "uniform": true
+  },
+  "runOptions": {
+    "numData": 0,
+    "numSecOptChem": "1 * 1 * 5 * 60",
+    "numSecPreSim": "1 * 1 * 5 * 60",
+    "numSecSim": "1 * 24 * 60 * 60",
+    "numSecWarmUp": "1 * 1 * 5 * 60"
+  },
+  "samplingOptions": {
+    "largeDataSamplingPeriod": 1,
+    "quantities": {
+      "GreensFunction": false,
+      "exchaEnergy": false,
+      "flow": false,
+      "instantParticleNum": false,
+      "instantParticleNumConv": false,
+      "interEnergy": false,
+      "kinetEnergy": false,
+      "nnInterEnergy": false,
+      "numParticles": false,
+      "numParticlesAtSite": false,
+      "numWinds": false,
+      "potenEnergy": false,
+      "sign": false,
+      "totEnergy": false
+    }
+  },
+  "saveOptions": {
+    "savePresimulationData": false,
+    "saveWarmUpData": false
+  },
+  "seed": {
+    "unique": true,
+    "value": 0
+  }
+}
