@@ -2,8 +2,9 @@
 
 Worm-algorithm Monte Carlo applied to the t-J model for a single carrier
 
-This code is accompanied with the publication "Unbiased description of magnetic polarons in a Mott insulator", Emil Blomquist and Johan Carlström, arXiv:1912.08825 (to be published in Nature Communications Physics)
+This code is accompanied with the publication "Ab initio description of magnetic polarons in a Mott insulator", Emil Blomquist and Johan Carlström, arXiv:1912.08825 (to be published in Nature Communications Physics)
 
+[![DOI](https://zenodo.org/badge/270650235.svg)](https://zenodo.org/badge/latestdoi/270650235)
 
 ## Installation
 
